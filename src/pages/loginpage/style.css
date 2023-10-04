@@ -1,0 +1,184 @@
+/* ===========Root========== */
+:root {
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --first-color: #ffffff;
+    --second-color: #d09cc0;
+    --title-color: rgb(165, 164, 164);
+    --text-color: #c79fbc;
+    --highligth-color: #deacac;
+    --body-color: #cc9d95;
+    --Green:#28c59e;
+    --orange:#d64b40;
+    --whiteB:#e8cecb;
+    --blue:#95bae3;
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font:'Archivo Black', sans-serif;
+    --h2-font-size: 1.25rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+  }
+  
+  
+  .App {
+    text-align: center;
+  }
+  
+  .navbar {
+    position: absolute;
+    /* background-color:var(--whiteB); */
+    width: 100%;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+  }
+  
+  .logouticon {
+    position: fixed;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 100px;
+    font-size: 1.3rem;
+    right: 130px;
+    top: 0.9rem;
+    border-radius: 24px;
+    transition: all 0.3s ease-in-out;
+    font-family: var(--body-font);
+    color: rgb(244, 243, 243);
+    background: #4e271ad7;
+    cursor: pointer;
+  }
+  
+  .loginicon {
+    position: fixed;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 100px;
+    font-size: 1.3rem;
+    right: 15px;
+    top: 0.9rem;
+    border-radius: 24px;
+    transition: all 0.3s ease-in-out;
+    font-family: var(--body-font);
+    color: rgb(244, 243, 243);
+    background: #4e271ad7;
+    cursor: pointer;
+  }
+  
+  .loginicon:hover{
+    color: var(--blue);
+  }
+  
+  .midloginicon:hover{
+    color: var(--blue);
+  }
+  
+  .midloginicon {
+    position: fixed;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 200px;
+    font-size: 1.9rem;
+    left: 250px;
+    top: 300px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    font-family: var(--body-font);
+    color: rgb(244, 243, 243);
+    background: #4e271ad7;
+    cursor: pointer;
+  }
+  
+  .login-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .login__box {
+    position: relative;
+  }
+  
+  .login__box .login__input {
+    padding-right: 36px;
+  }
+  
+  .login__label {
+    display: block;
+    color: var(--orange);
+    margin-bottom: 0.25rem;
+  }
+  
+  .form-box{
+    margin-top: 7vh;
+    opacity:80%;
+    background: black;
+    padding-right: 80px;
+    padding-left: 80px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+  .login-text{
+    width: 100%;
+    color: white;
+    border-bottom: 2px solid white;
+    line-height: 30px;
+    width: 100%;
+    font-weight: bolder;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vh;
+  }
+  
+  label {
+    color:white;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .login-box{
+    border: 1px solid lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 2px;
+    padding-left: 10px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin: 5px;
+    font-size: 11pt;
+    background: transparent;
+    transition: 1s;
+    outline: none;
+  }
+  
+  .show {
+    display: block;
+    transition-delay: 50ms;
+    opacity: 1;
+  }
+  
+  .show.active {
+    transform: translateY(100px) scale(0) rotateY(180deg);
+    opacity: 0;
+  }
+  

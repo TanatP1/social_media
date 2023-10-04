@@ -1,0 +1,67 @@
+
+
+.main{
+  /* display */
+  display: flex;
+  flex-wrap: wrap;
+
+  /* border */
+  border: 5px solid #000;
+  border-radius: 10px;
+  width: 50vw;
+  height: 80vh;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.text{
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#post-text{
+  width: 50vw;
+  height: 60%;
+}
+
+.bottom{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.logout{
+  float: left;
+  
+  border: 3px solid #000;
+  background: #333333;
+  margin-top: 0.5%;
+  margin-bottom: 0;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+.next{
+  float: right;
+  border: 3px solid #000;
+  background: #333;
+  margin-top: 0.5%;
+  margin-bottom: 0;
+
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+input[type = "file"]{
+  padding-top: 1%;
+}
+
+input[type = "submit"]{
+  padding: 10px; 
+  float:left; 
+  margin-top:1%; 
+  width: 80px;
+}
