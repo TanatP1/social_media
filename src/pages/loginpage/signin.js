@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { auth, provider } from "./config";
+import { auth, provider } from "../../services/firebase";
 import { signInWithPopup } from "firebase/auth";
 
 
@@ -18,9 +18,7 @@ function SignIn() {
 
     return (
         <div>
-            {value ? <Home /> :
-                <botton onclick={handleClick}>SignIn with Google</botton>
-            }
+                
         </div>
 
     );

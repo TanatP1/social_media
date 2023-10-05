@@ -5,11 +5,11 @@ import TabbarElement from "./tabbar";
 
 const TabbarList = (props) => {
     const[tabbarEl, setEl] = useState([
-        {
-            content: 'Home',
-            ICOkey: 'home',
-            links: new URL('https://www.google.co.th/')
-        },
+        // {
+        //     content: 'Home',
+        //     ICOkey: 'home',
+        //     links: new URL('https://www.google.co.th/')
+        // },
         {
             content: 'Add post',
             ICOkey: 'message-alt-add',
@@ -20,16 +20,21 @@ const TabbarList = (props) => {
             ICOkey: 'hash',
             links: '/search'
         },
-        {
-            content: 'Notifications',
-            ICOkey: 'bell',
-            links: new URL('https://www.google.co.th/')
-        },
-        {
-            content: 'Profile',
-            ICOkey: 'user',
-            links: new URL('https://www.google.co.th/')
-        }
+        // {
+        //     content: 'Notifications',
+        //     ICOkey: 'bell',
+        //     links: new URL('https://www.google.co.th/')
+        // },
+         {
+             content: 'Profile',
+             ICOkey: 'user',
+             links: new URL('https://www.google.co.th/')
+         },
+        //  {
+        //     content: 'Logout',
+        //     ICOkey: 'user',
+        //     links: new URL('/LoginForm')
+        // }
     ]);
 
     return(
