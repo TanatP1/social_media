@@ -1,11 +1,21 @@
 import React from 'react'
+import rabbit from './components/tabbar/Rabbit.png'
+import mainpic from './pages/loginpage/pics/WallCream.png'
 
 const Navigation = ({ login }) => {
+  console.log(mainpic);
+  console.log(rabbit);
   return (
     <div>
-      Please login with Google lollol
+      <span className='mainname'>RABBIT H!</span>
       <div>
-        <button onClick={login}>SignIn with Googles</button>
+        <span onClick={login} className="loginicon">LogIn</span>
+      </div>
+      <div>
+        <img className="picrab" src={rabbit}></img>
+      </div>
+      <div>
+      <img className="mainpic" src={mainpic}></img>
       </div>
     </div>
   )

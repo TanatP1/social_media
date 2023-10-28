@@ -3,14 +3,8 @@ import React, { useState } from "react";
 import Grouppic from './pics/Group.png';
 // import './App.css';
 
-const LoginForm = ({ isShowLogin }) => {
+const LoginForm = ({ login }) => {
   console.log(Grouppic);
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-
-  function validateForm() {
-    return username.length > 0 && password.length > 0;
-  };
 
   return (
     <div className="container">
@@ -24,7 +18,7 @@ const LoginForm = ({ isShowLogin }) => {
         <p>A space to embrace everyone's feelings and stories</p>
       </div>
 
-      <div className={`${isShowLogin ? "active" : ""} show`}>
+      {/* <div className={`${isShowLogin ? "active" : ""} show`}>
 
         <div id="page-mask"></div>
         <div >
@@ -72,7 +66,8 @@ const LoginForm = ({ isShowLogin }) => {
 
         </div>
 
-      </div>
+      </div> */}
+
     </div>
   );
 };

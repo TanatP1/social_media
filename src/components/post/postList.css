@@ -1,0 +1,33 @@
+body {
+    background-color: #FFCED1;
+}
+
+.post {
+    background-color: #FFCED1;
+    border: 1px solid #FFCED1;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+/* Style the text within each Post component */
+.post .user{
+    color: #C93556;
+    font-weight: bold;
+    cursor: pointer;
+}
+.post .text{
+    color: #fff;
+    font-weight: bold;
+}
+
+.post .botTab {
+    cursor: pointer; /* Add a pointer cursor to indicate it's clickable */
+  }
+  
+/* Style the "like" button when it's clicked, look at App.css under services*/
+  
+/* Style the image within each Post component */
+/* .post img {
+    max-width: 70%;
+    height: auto;
+} */

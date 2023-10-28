@@ -1,0 +1,164 @@
+.searchmain {
+    position: absolute;
+    width: 800px;
+    height: 450px;
+    top: 100px;
+    left: 300px;
+    padding: 0px;
+    display: flex;
+    border-radius: 30px;
+    background: white;
+}
+
+.headsearch {
+    position: absolute;
+    font-size: 24px;
+    color: #C93556;
+    left: 230px;
+    margin: 25px 0;
+    cursor: pointer;
+}
+
+.Music {
+    position: absolute;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 24px;
+    border: 3px solid #FFCED1;
+    background-color: #FFCED1;
+    color: #C93556;
+    width: 250px;
+    height: 60px;
+    top: 100px;
+    font-size: 1.3rem;
+    left: 80px;
+    cursor: pointer;
+}
+
+.Game {
+    position: absolute;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 24px;
+    border: 3px solid #FFCED1;
+    background-color: #FFCED1;
+    color: #C93556;
+    width: 250px;
+    height: 60px;
+    top: 100px;
+    font-size: 1.3rem;
+    left: 450px;
+    cursor: pointer;
+}
+
+.Sport {
+    position: absolute;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 24px;
+    border: 3px solid #FFCED1;
+    background-color: #FFCED1;
+    color: #C93556;
+    width: 250px;
+    height: 60px;
+    top: 200px;
+    font-size: 1.3rem;
+    left: 80px;
+    cursor: pointer;
+}
+
+.Animal {
+    position: absolute;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 24px;
+    border: 3px solid #FFCED1;
+    background-color: #FFCED1;
+    color: #C93556;
+    width: 250px;
+    height: 60px;
+    top: 200px;
+    font-size: 1.3rem;
+    left: 450px;
+    cursor: pointer;
+}
+
+.Anime {
+    position: absolute;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 24px;
+    border: 3px solid #FFCED1;
+    background-color: #FFCED1;
+    color: #C93556;
+    width: 250px;
+    height: 60px;
+    top: 300px;
+    font-size: 1.3rem;
+    left: 80px;
+    cursor: pointer;
+}
+
+.Food {
+    position: absolute;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 24px;
+    border: 3px solid #FFCED1;
+    background-color: #FFCED1;
+    color: #C93556;
+    width: 250px;
+    height: 60px;
+    top: 300px;
+    font-size: 1.3rem;
+    left: 450px;
+    cursor: pointer;
+}
+
+.Music:hover {
+    background-color: #f3a7ac;
+    border: 3px solid #f3a7ac;
+}
+
+.Game:hover {
+    background-color: #f3a7ac;
+    border: 3px solid #f3a7ac;
+}
+
+.Animal:hover {
+    background-color: #f3a7ac;
+    border: 3px solid #f3a7ac;
+}
+
+.Anime:hover {
+    background-color: #f3a7ac;
+    border: 3px solid #f3a7ac;
+}
+
+.Sport:hover {
+    background-color: #f3a7ac;
+    border: 3px solid #f3a7ac;
+}
+
+.Food:hover {
+    background-color: #f3a7ac;
+    border: 3px solid #f3a7ac;
+}

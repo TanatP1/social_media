@@ -10,8 +10,9 @@ const TabbarList = (props) => {
         //     ICOkey: 'home',
         //     links: new URL('https://www.google.co.th/')
         // },
+        
         {
-            content: 'Add post',
+            content: 'Post',
             ICOkey: 'message-alt-add',
             links: '/post'
         },
