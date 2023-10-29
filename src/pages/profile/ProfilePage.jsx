@@ -7,9 +7,9 @@ const ProfilePage = () => {
   return (
     <div className="App">
         {/* -------------------------------------   Tabbar --------------------------------------------------- */}
-      <div className="tabbar" style={{display:"inline"}}>
-        <TabbarList />
-      </div>
+
+      <TabbarList />
+   
     
     </div>
   )

@@ -1,15 +1,20 @@
 import React, { useState } from "react";
-import Post from "./Post";
+import Post from "./post";
 import './postList.css';
+import { useAuth } from "../../services/authContext";
+import { useRef } from "react";
 
 const PostList = () => {
+    const { currentUser, login, logout } = useAuth();
+    const [title, setTitle] = useState("");
+    const [image, setImage] = useState();
     const [posts, setPosts] = useState([
         {
             user: 'Johny',
             text: 'I come for this mountain',
             Image: require('./img/mountain.jpg'),
             likes: 3,
-            id: 1   
+            id: 1
         },
         {
             user: 'Patty',
@@ -27,36 +32,32 @@ const PostList = () => {
         }
     ]);
 
-    // Function to add a new post to the list
-    const addPost = (newPost) => {
-        setPosts([...posts, newPost]);
-    };
+    const handleClick = () => {
+        setPosts(prefPost => [...prefPost,{user: currentUser.displayName,text: title,Image: image, likes: 0}])
+        console.log(posts);
+    }
+
+    const handleImage = (event) => {
+        const file = event.target.file[0];
+        console.log(file);
+        setImage(event.target.file[0]);
+    }
 
     return (
         <div>
             {/* Render existing posts */}
+            <input type="text" placeholder="title..." onChange={(e) => setTitle(e.target.value)}/>
+            <br />
+            <br />
+            <input type= "file" onChange={(e) => {
+                if(e.target.files && e.target.files.length > 0){
+                    setImage(e.target.files);
+                }
+            }}/>
+            <button onClick={() => handleClick()}>Post</button>
             {posts.map(post => (
                 <Post user={post.user} text={post.text} Image={post.Image} likes={post.likes} key={post.id} />
             ))}
-            {/* Add a form for users to create new posts */}
-            <form onSubmit={(e) => {
-                e.preventDefault();
-                const user = 'New User'; // You can set the actual user here
-                const text = e.target.querySelector('#new-post-text').value;
-                // You can handle image, likes, and ID as needed
-                const newPost = {
-                    user,
-                    text,
-                    Image: require('./img/cat.jpg'), // Replace with your default image
-                    likes: 0,
-                    id: posts.length + 1, // Generate a unique ID
-                };
-                addPost(newPost);
-                e.target.reset();
-            }}>
-                <input type="text" id="new-post-text" placeholder="Enter your post text" />
-                <button type="submit">Add Post</button>
-            </form>
         </div>
     );
 }

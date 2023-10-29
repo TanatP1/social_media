@@ -1,13 +1,13 @@
-
 import { useState } from 'react';
 
 
 const Post = (props) => {
     const [likes, setLikes] = useState(props.likes);
+    const [isLiked, setIsLiked] = useState(false);
     const handleLikes = () => {
-        setLikes(likes + 1);
+        setLikes(isLiked ? likes - 1 : likes + 1);
+        setIsLiked(!isLiked);
     }
-
 
     return(
         <div className='post'>

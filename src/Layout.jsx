@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 import { useAuth } from './services/authContext';
-import LoginForm from './pages/loginpage/LoginForm';
-import SignIn from './pages/loginpage/signin';
+
 import Navigation from './Navigation';
 import rabbit from './components/tabbar/Rabbit.png'
+import './layout.css'
+
 
 const Layout = () => {
     console.log(rabbit);
@@ -25,9 +26,7 @@ const Layout = () => {
                         {currentUser.displayName}
                     </div>
                 )}
-                <span onClick={logout} className="logouticon">Logout</span>
-                <p className='fontnametab'>RABBIT H!</p>
-                <img className="picrabbit" src={rabbit}></img>
+                
             </div>
             <div>
                 <Outlet />

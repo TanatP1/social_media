@@ -1,15 +1,4 @@
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-} */
-
 body {
-  /* position: relative;
-  min-height: 100vh;
-  display: flex;
-  align-items: center; */
   justify-content: center;
   background: #FFCED1;
 }
@@ -134,6 +123,8 @@ body {
   background: #FFCED1;
   border-color: #FFCED1;
   color: white;
+  padding: 10px;
+
 }
 /* After user clicked the post-text box. */
 #post-text:focus {
@@ -157,9 +148,11 @@ body {
   margin-left: 53px;
   margin-top: 30px;
   font-weight: bold;
+  margin-top: 10px;
 }
 .bottom input[type="file"]:hover {
   background-color: #FFCED1;
+  
 }
 /* For Post button. */
 .bottom input[type="submit"] {
@@ -191,3 +184,4 @@ input[type = "submit"]{
   margin-top:1%; 
   width: 80px;
 }
+
