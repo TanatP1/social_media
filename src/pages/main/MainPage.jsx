@@ -1,20 +1,13 @@
-// MainPage.js
-
 import React, { useState } from 'react';
 import TabbarList from '../../components/tabbar/tabbarList';
-import LoginForm from '../loginpage/LoginForm';
-import PostList from '../../components/post/postList'; // Adjust the import path
+import PostList from '../../components/post/postList';
+import PostPic from './PostPic'; // Import the PostPic component
 import './MainPage.css';
 
 const MainPage = () => {
   const [posts, setPosts] = useState([]); // Initialize an empty array to store posts.
 
-  const addPostToMainPage = (text) => {
-    const newPost = {
-      text: text,
-      // Add other relevant information here.
-    };
-
+  const addPostToMainPage = (newPost) => {
     setPosts([...posts, newPost]);
   };
 
@@ -25,9 +18,14 @@ const MainPage = () => {
         <TabbarList />
       </div>
 
-      {/* PostList component with posts and addPost function */}
+      {/* PostPic component for uploading images */}
+      <div className="post-pic">
+        <PostPic addPostToMainPage={addPostToMainPage} /> {/* Pass the callback function */}
+      </div>
+
+      {/* PostList component with posts */}
       <div className="table">
-        <PostList posts={posts} addPost={addPostToMainPage} />
+        <PostList posts={posts} />
       </div>
     </div>
   );

@@ -21,13 +21,6 @@ body {
 }
 
 .post .botTab {
-    cursor: pointer; /* Add a pointer cursor to indicate it's clickable */
+    cursor: pointer; 
   }
   
-/* Style the "like" button when it's clicked, look at App.css under services*/
-  
-/* Style the image within each Post component */
-/* .post img {
-    max-width: 70%;
-    height: auto;
-} */

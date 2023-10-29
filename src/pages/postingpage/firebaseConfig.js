@@ -36,29 +36,4 @@ const firebaseConfig = {
     console.log(err.message)
   })
 
-// Adding accounts
-const addAccounts  = document.querySelector('.add')
-addBookForm.addEventListener('submit', (e)=>{
-  e.preventDefault() 
-  addDoc(colRef, {
-    Name: addAccounts.name.value,
-  })
-  .then(() =>{
-    addAccounts.reset()
-  })
-
-})
-
-
-// Deleting accounts
-const deleteAccounts  = document.querySelector('.delete')
-addBookForm.addEventListener('submit', (e)=>{
-  e.preventDefault()
-
-  const docRef = doc(db, 'accounts', deleteAccounts.id.value )
-  
-  deleteDoc(docRef)
-  .then(() => {
-    deleteAccounts.reset
-  })
-})
+  const storage = firebase.storage();
